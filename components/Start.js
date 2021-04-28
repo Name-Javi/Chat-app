@@ -191,5 +191,4 @@ const Start = ({ navigation }) => {
     </ImageBackground>
   );
 };
-
 export default Start;
