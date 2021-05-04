@@ -1,63 +1,42 @@
-# Chat-app
+# Chat App
 
-Chat is a chat app for mobile devices built with React Native and developed using Expo.
+## Overview
 
-The chat interface functionality is created with the Gifted Chat library. Chat conversations are stored locally with Google 
-Firestore Database and Google Firebase authentication and are also accessible offline.
+This is the sixth major project from my online web development course. It is a messaging application for mobile devices that was developed using React Native, Expo's Gifted Chat, and Google Firebase. It provides users with a chat interface to send messages with options to share images and their location via an action button.
 
-Users are able to share images (take a picture or choose from media library) once the user grants access to their local media library
-and camera. Location sharing is enabled by the user granting the app permission to read user location data.
+## Technologies:
 
-See the **hosted project** [here](https://zeniagist.github.io). <br />
-
-## Quick Start 
-
-### Install dependencies
-
-Check if you are running the latest version of [Node](https://nodejs.org/en/).
-
-Install [Expo](https://expo.io/) and create [your-Expo-account] (https://expo.io/signup)
-
-```sh
-$ npm install expo-cli --global
- ```
-
-Set up your React Native App in your projects folder
-```sh
-$ expo init hello-world
-```
-
-Go to your project's directory 
-```sh
-$ cd hello-world
-```
-
-Launch the https server Metro Bundler in a new tab
-```sh
-$ npm run start
-```
-or
-```sh
-$ expo start
-```
-### Mobile Device Setup
-- Install the Expo app through your device's app store (iOS or Android)
-- Login with expo account
-- Take a screenshot of the QR Code on the Metro Builder
-
-### Device Emulator Setup
-- If you would like to run the app on your machine through a simulator/emulator, you will either need
-  - [Android Studio](https://docs.expo.io/workflow/android-studio-emulator/)
-  - [iOS Simulator](https://docs.expo.io/workflow/ios-simulator/)
-
-## Features
-- Home page where users can enter their name and choose a background color for the chat screen
-- Conversation page displaying the conversation
-- Users can send images and location data 
-- Datastorage online in firebase Cloud and local storage offline
-
-## Technologies
 - React Native
 - Expo
-- Google Firestore Database
-- Gifted Chat library
+- Expo's Gifted Chat
+- Google Firebase
+- Android Studio
+
+## Key Features:
+
+- **Start screen** to input a username as well as choose a background color for the chat screen.
+- **Chat screen** that displays the conversation with an input field for sending messages, as well as an action button for more options.
+- **Action button** with options to Choose Photo From Library, Take Picture, Send Location, or Cancel; the app will ask permission to access the device's photo library/camera/location data.
+- Data is stored for both **online** and **offline** use.
+
+## Deployment
+
+### You will need:
+
+- Node.js
+- Expo
+  - Sign up for an Expo account [HERE](https://expo.io/signup)
+  - Install the Expo Command Line Interface with `$ npm install expo-cli --global`
+  - Download the Expo app on your smartphone and sign in
+- Simulator/Emulator
+  - [Android Studio](https://docs.expo.io/workflow/android-studio-emulator/)
+  - [iOS Simulator](https://docs.expo.io/workflow/ios-simulator/)
+- Configured [Firebase database](https://codinglatte.com/posts/how-to/how-to-create-a-firebase-project/)
+
+### Then:
+
+- Clone the repository
+  - Integrate your own Firebase configuration in Chat.js (lines 31-37)
+- Install dependencies
+  - `$ npm install`
+- Start the app with `$ npm start` or `$ expo start`
